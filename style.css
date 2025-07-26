@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+#starting-div{
+    font-family: "Fredoka", sans-serif;
+}
+#penguin-img{
+    animation: penguinjump 
+    2s ease-in-out infinite;
+}
+
+@keyframes penguinjump {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+         transform: translateY(0);
+    }
+    
+}
