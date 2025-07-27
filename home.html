@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the flag</title>
     <!-- style.css -->
-     <link rel="stylesheet" href="style.css">
-     <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
     <!-- tailwind -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="w-full h-screen bg-no-repeat bg-cover" style="background: linear-gradient(to top right,#eafff1, #d3f4ff);">
-    <div class="container flex justify-center items-center flex-col">
-        <h1 class="!text-5xl !mt-15">Guess the flag ?</h1>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsEbvOKqpTTM9w4f_Je-PsEJZ9A6andIYJQ&s" alt="" width="400px" class="mt-5">
-        <div class="flex">
-            <li>Canada</li>
-            <li>Australia</li>
-            <li>India</li>
-            <li>United States of America</li>
+
+    <div class="container flex flex-col justify-center items-center mt-12 w-full">
+        <h1 class="text-5xl mt-5">Guess the flag?</h1>
+        <h4 class="pt-4">Question 1 out of 10</h4>
+        <div class="d-flex justify-center w-full p-3 ">
+            <h5>Score : 0/10</h5>
         </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsEbvOKqpTTM9w4f_Je-PsEJZ9A6andIYJQ&s"
+            alt="Flag to guess" width="400" class="mt-3" />
     </div>
+    <div class="flex w-full  justify-center items-center mt-5">
+        <ul class="flex justify-evenly items-center w-full pt-3">
+            <li class="btn btn-outline-dark px-4 py-2 ">Canada</li>
+            <li class="btn btn-outline-dark px-4 py-2 ">Australia</li>
+            <li class="btn btn-outline-dark px-4 py-2 ">India</li>
+            <li class="btn btn-outline-dark px-4 py-2 ">United States of America</li>
+        </ul>
+    </div>
+    <div class="flex w-full justify-end container-fluid ">
+        <i class="fa-solid fa-circle-arrow-right fa-3x pt-4 mx-5 cursor-pointer"></i>
+    </div>
+
 </body>
 </html>
