@@ -26,28 +26,38 @@
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="w-full h-screen bg-no-repeat bg-cover" style="background: linear-gradient(to top right,#eafff1, #d3f4ff);">
 
     <div class="container flex flex-col justify-center items-center mt-12 w-full">
         <h1 class="text-5xl mt-5">Guess the flag?</h1>
-        <h4 class="pt-4">Question 1 out of 10</h4>
+        <h4 class="pt-4" id="question-number"></h4>
         <div class="d-flex justify-center w-full p-3 ">
-            <h5>Score : 0/10</h5>
+            <h5 id="score"></h5>
         </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsEbvOKqpTTM9w4f_Je-PsEJZ9A6andIYJQ&s"
-            alt="Flag to guess" width="400" class="mt-3" />
+        <img id="flag-img" src="" alt="Flag to guess" width="400" class="mt-3" />
     </div>
     <div class="flex w-full  justify-center items-center mt-5">
-        <ul class="flex justify-evenly items-center w-full pt-3">
-            <li class="btn btn-outline-dark px-4 py-2 ">Canada</li>
-            <li class="btn btn-outline-dark px-4 py-2 ">Australia</li>
-            <li class="btn btn-outline-dark px-4 py-2 ">India</li>
-            <li class="btn btn-outline-dark px-4 py-2 ">United States of America</li>
+        <ul id="options" class="flex justify-evenly items-center w-full pt-3">
+            <ul class="flex justify-evenly items-center w-full pt-3 space-x-3">
+                <li id="option0"
+                    class="btn btn-outline-primary px-5 py-3 rounded-lg shadow cursor-pointer hover:bg-primary hover:text-white transition">
+                    Option A</li>
+                <li id="option1"
+                    class="btn btn-outline-primary px-5 py-3 rounded-lg shadow cursor-pointer hover:bg-primary hover:text-white transition">
+                    Option B</li>
+                <li id="option2"
+                    class="btn btn-outline-primary px-5 py-3 rounded-lg shadow cursor-pointer hover:bg-primary hover:text-white transition">
+                    Option C</li>
+                <li id="option3"
+                    class="btn btn-outline-primary px-5 py-3 rounded-lg shadow cursor-pointer hover:bg-primary hover:text-white transition">
+                    Option D</li>
+            </ul>
+
         </ul>
-    </div>
-    <div class="flex w-full justify-end container-fluid ">
-        <i class="fa-solid fa-circle-arrow-right fa-3x pt-4 mx-5 cursor-pointer"></i>
     </div>
 
 </body>
+<script src="./script.js"></script>
+
 </html>
